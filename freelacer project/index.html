@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prexoft</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style4.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #preloader{
+    background:#0003 url(images/pre2.gif) no-repeat center center;
+    background-size:15%;
+    
+    height:100vh;
+    width:100%;
+    position:fixed;
+    z-index:100;
+}
+    </style>
+
+</head>
+
+<body>
+<div id="preloader"></div>
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><span>prexoft</span></a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+
+        <nav class="navbar ">
+
+
+            <li class="nav-item">
+
+                <a class="nav-link" href="index.html">home</a>
+            </li>
+            <!-- <a href="#features">features</a> -->
+            <li class="nav-item">
+
+                <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="color:rgb(235, 22, 207)">
+                    <li><a class="dropdown-item" style="color:rgb(235, 22, 207)" style="color:rgb(235, 22, 207)"
+                            href="services/web.html">Website Development</a></li>
+                    <li><a class="dropdown-item" style="color:rgb(235, 22, 207)" href="services/app.html">App
+                            Development</a></li>
+                    <li><a class="dropdown-item" style="color:rgb(235, 22, 207)" href="services/game.html">Game
+                            Development</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" style="color:rgb(235, 22, 207)" href="services/marketing.html">Digital
+                            Marketing</a></li>
+                </ul>
+            </li>
+            <!-- <a href="#review">review</a> -->
+            <!-- <a href="#pricing">pricing</a> -->
+            <li class="nav-item">
+
+                <a class="nav-link" href="contact.html">contact</a>
+            </li>
+
+
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+            <h3>Welcome to <span>Prexoft</span></h3>
+            <p>
+                The development of reliable and scalable software solutions for any OS, browser and device. We bring
+                together deep industry expertise and the latest IT advancements to deliver custom solutions and products
+                that perfectly fit the needs and behavior of their users.</p>
+            <a href="#" class="btn">Get Started</a>
+        </div>
+
+        <div class="image" data-aos="fade-up" data-aos-duration="2000">
+            <img src="images/home-img.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- <div id="modalbox" class="modal">
+        <div class="modalcontent">
+            <h1 class="heading" id="new" style="color:white;">Services</h1>
+            <a href="#" class="modalclose">&times;</a>
+            <div class="container">
+
+                <a href="services/web.html" class="btn">Website Development</a><br>
+                <a href="services/app.html" class="btn">App Development</a><br>
+                <a href="services/game.html" class="btn">Game Development</a><br>
+                <a href="services/marketing.html" class="btn">Digital Marketing</a><br>
+               
+                
+            </div>
+           
+        </div>
+       
+    </div> -->
+
+    
+
+    <!-- home section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+
+        <h1 class="heading"> Our Services </h1>
+
+        <div id="box-container" class="box-container">
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/web3.png" alt="">
+                <h3>Website Development</h3>
+                <p>
+                    We work on projects of all types and sizes. If you are a startup with a MVP, or a big enterprise
+                    with a very large project - we have what it takes to bring your projects and web needs to life!.</p>
+                <a href="services/web.html" class="btn">read more</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/app.png" alt="">
+                <h3>App Development</h3>
+                <p>More and more users turn to mobile viewing devices when utilizing the Web than ever before.
+                    Guaranteeing accessibility of your site, our team specializes in mobile development, creating a
+                    natural, seamless interface to ensure clients have full access and a high-quality experience
+                    regardless of viewing device.</p>
+                <a href="services/app.html" class="btn">read more</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/game.png" alt="">
+                <h3>Game Development</h3>
+                <p>Game development experts at building fun and addictive experiences to unlocking entirely new ways of
+                    engaging the audience. Providing solution for all Mobile, Web, Desktop/PC, and Interactive game
+                    development service requirements.</p>
+                <a href="services/game.html" class="btn">read more</a>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/digital.png" alt="">
+                <h3>Digital Marketing</h3>
+                <p>Get dedicated specialists with proven expertise for different key areas of branding and digital
+                    marketing in Lucknow. Thus, providing a one stop digital solution for all marketing functions.</p>
+                <a href="services/marketing.html" class="btn">read more</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- about section starts  -->
+
+    <!-- <section class="about" id="about">
+
+        <h1 class="heading"> about Us </h1>
+
+        <div class="column">
+
+            <div class="image" data-aos="fade-up" data-aos-duration="2000">
+                <img src="images/about-img.png" alt="">
+            </div>
+
+            <div class="content" data-aos="fade-up" data-aos-duration="2000">
+                <h3>Easy And Perfect Solution For Your Business.</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla placeat deserunt saepe repudiandae
+                    veniam soluta minima dolor hic aperiam iure.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, quaerat. Dolorem ratione saepe
+                    magni quo inventore porro ab voluptates eos, nam eius provident accusantium, quia similique est,
+                    repellendus et reiciendis.</p>
+                <div class="buttons">
+                    <a href="#" class="btn"> <i class="fab fa-apple"></i> app store </a>
+                    <a href="#" class="btn"> <i class="fab fa-google-play"></i> google-play </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <!-- about section ends -->
+
+    <!-- newsletter  -->
+
+    <!-- <div class="newsletter" data-aos="fade-up" data-aos-duration="2000">
+
+        <h3 data-aos="fade-up" data-aos-duration="2500">Subscribe For New Features</h3>
+        <p data-aos="fade-up" data-aos-duration="2500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+            sed aliquam quibusdam neque magni magnam est laborum doloribus, facere dolores.</p>
+        <form action="" data-aos="fade-up" data-aos-duration="2500">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="Subscribe">
+        </form>
+
+    </div> -->
+
+    <!-- review section starts  -->
+
+    <!-- <section class="review" id="review" data-aos="fade-up"
+data-aos-duration="2000">
+
+    <h1 class="heading" data-aos="fade-up"
+    data-aos-duration="2500"> people's review </h1>
+
+    <div class="box-container" data-aos="fade-up"
+    data-aos-duration="2500">
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic1.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic2.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+                <img src="images/pic3.png" alt="">
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="comment">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus et, perspiciatis nisi tempore aspernatur accusantium sed distinctio facilis aperiam laborum autem earum repellat, commodi eum. Ullam cupiditate expedita officiis obcaecati?
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+    <!-- review section ends -->
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing" data-aos="fade-up" data-aos-duration="2000">
+
+        <h1 class="heading" data-aos="fade-up" data-aos-duration="2500"> Our Pricing Plans </h1>
+
+        <div class="box-container" data-aos="fade-up" data-aos-duration="2500">
+
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">$10<span>/monthly</span></div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                    <li> <i class="fas fa-check"></i> No transaction fees </li>
+                    <li> <i class="fas fa-times"></i> unlimited storage </li>
+                    <li> <i class="fas fa-times"></i> 5 downloads </li>
+                </ul>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">standard</h3>
+                <div class="price">$15<span>/monthly</span></div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                    <li> <i class="fas fa-check"></i> No transaction fees </li>
+                    <li> <i class="fas fa-check"></i> unlimited storage </li>
+                    <li> <i class="fas fa-times"></i> 5 downloads </li>
+                </ul>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <div class="price">$25<span>/monthly</span></div>
+                <ul>
+                    <li> <i class="fas fa-check"></i> 1000+ downloads </li>
+                    <li> <i class="fas fa-check"></i> No transaction fees </li>
+                    <li> <i class="fas fa-check"></i> unlimited storage </li>
+                    <li> <i class="fas fa-check"></i> 5 downloads </li>
+                </ul>
+                <a href="#" class="btn">check out</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- pricing section ends -->
+
+    <!-- contact section starts  -->
+    <!-- 
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="2000">
+
+        <div class="image" data-aos="fade-up" data-aos-duration="2500">
+            <img src="images/contact-img.png" alt="">
+        </div>
+
+        <form action="php/contact.php" method="post" data-aos="fade-up" data-aos-duration="2500">
+
+            <h1 class="heading">contact us</h1>
+
+            <div class="inputBox">
+                <input name="name" type="text" required>
+                <label>name</label>
+            </div>
+
+            <div class="inputBox">
+                <input name="email" type="email" required>
+                <label>email</label>
+            </div>
+
+            <div class="inputBox">
+                <input name="phone" type="number" required>
+                <label>phone</label>
+            </div>
+
+            <div class="inputBox">
+                <textarea name="message" required name="" id="" cols="30" rows="10"></textarea>
+                <label>message</label>
+            </div>
+
+            <input type="submit" class="btn" value="send message">
+
+        </form>
+
+    </section> -->
+
+    <!-- contact section edns -->
+
+    <!-- footer section starts  -->
+
+    <div class="footer" data-aos="fade-up" data-aos-duration="2000">
+
+        <div class="box-container" data-aos="fade-up" data-aos-duration="2500">
+
+            <!-- <div class="box" data-aos="fade-up" data-aos-duration="2600">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur rerum consectetur architecto
+                    ad tempora blanditiis quo aliquid inventore a.</p>
+            </div> -->
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2600">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <!-- <a href="#">features</a> -->
+                <a href="about.html">about</a>
+                <a href="#">services</a>
+                <!-- <a href="#">pricing</a> -->
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-duration="2600">
+                <h3>services</h3>
+                <a href="services/web.html">wensite development</a>
+                <!-- <a href="#">features</a> -->
+                <a href="services/app.html">app development</a>
+                
+                <!-- <a href="#">pricing</a> -->
+                <a href="services/game.html">game development</a>
+                <a href="services/marketing.html">digital marketing</a>
+                <!-- <a href="services/game.html">game development</a> -->
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2600">
+                <h3>follow us</h3>
+                <!-- <a href="#">facebook</a> -->
+                <a href="#">instagram</a>
+                <a href="#">Telegram</a>
+                <!-- <a href="#">twitter</a> -->
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-duration="2600">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p style="cursor: pointer;"> <a href="tel:9555409603">+919555409603 </a>
+                        <a href="tel:+91 7388739584">+91 7388739584</a>
+                    </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p style="cursor: pointer;"><a href="mailto:support@prexoft.com">support@prexoft.com </a>
+                        <a href="mailto:admin@prexoft.com ">admin@prexoft.com </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h1 class="credit"> &copy; copyright @ 2022 by Prexoft </h1>
+
+    </div>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <script src="javascript/index.js"></script>
+
+
+    <script>
+        function newFunction() {
+            let header = document.querySelector('header');
+            header.classList.toggle('scrolling-active', window.scrollY > 0);
+
+        }
+
+        window.addEventListener('scroll', newFunction);
+
+    </script>
+<script>
+    
+    var l = document.getElementById('preloader');
+    function newFunction() {
+        l.style.display = 'none';
+    }
+    window.addEventListener('load', newFunction);
+</script>
+
+
+</body>
+
+</html>

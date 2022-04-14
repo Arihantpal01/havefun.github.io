@@ -1,0 +1,258 @@
+
+:root{
+    --purple:#814096;
+    --pink:#F83292;
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}
+
+.modal{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(77,77,77,0.7);
+    transition:all 0.4s;
+    visibility: hidden;
+    /* filter: blur(1px); */
+    opacity: 0;
+    
+}
+
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+.new{
+    color:white;
+}
+.modalcontent{
+    position:relative;
+    background: #0000;
+    width:100%;
+    max-width: 100%;
+    height: 100%;
+    padding:2rem 2rem;
+    border-radius: 4px;
+    padding-top:9rem;
+    z-index: 5;
+}
+.modalclose{
+    position:absolute;
+    top: 0;
+    right: 15px;
+    color:var(--pink);
+    font-size:5rem;
+    text-decoration: none;
+    /* padding-bottom:4rem; */
+}
+
+.modalcontent .btn{
+    display:flex;
+    justify-content:center;
+    margin: auto;
+    text-align: center;
+    align-items:center;
+    padding:1rem 1rem;
+    margin-top:1.5rem;
+    background: #0009;
+    width: 50%;
+}
+
+.new-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding:.5rem 10rem;
+    border-radius: 5rem;
+    background:var(--gradient);
+    font-size: 1.7rem;
+    color:#fff;
+    width: 100%;
+    height: 4.5rem;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.new-btn:hover,new-btn:active{
+    color: white;
+}
+
+.my-image a {
+   font-size:5rem;
+   color:#F83292;
+}
+
+.about .container h1{
+    font-weight: bold;
+}
+
+max input{
+    border-top:0;
+    border-left:0;
+}
+.p-c{
+    font-size:2rem;
+}
+
+@media (max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px){
+    
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+    .modalcontent{
+        position:relative;
+        background: #0000;
+        width:100%;
+        max-width: 100%;
+        height: 100%;
+        padding:2rem 2rem;
+        border-radius: 4px;
+        padding-top:9rem;
+        z-index: 5;
+        margin-top:50%;
+    }
+    .modalcontent .btn{
+        display:flex;
+        justify-content:center;
+        margin: auto;
+        text-align: center;
+        align-items:center;
+        padding:1rem 1rem;
+        
+        background: #0009;
+        height:10vh;
+        width:auto;
+        font-size:2.5rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header label{
+        visibility: visible;
+        opacity: 1;
+        color:white;
+    }
+
+    h1{
+        font-size:6rem;
+    }
+
+    .new-btn {font-size: 10px; 
+
+    }
+    
+
+    .modalcontent .btn{
+        display:flex;
+        justify-content:center;
+        margin: auto;
+        text-align: center;
+        align-items:center;
+        padding:1rem 1rem;
+        
+        background: #0009;
+        height:10vh;
+        width:auto;
+        font-size:2.5rem;
+    }
+
+
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0;
+        width:100%;
+        background:#fff;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin:2rem 0;
+        font-size: 2rem;
+        color:var(--pink);
+    }
+
+    header .navbar a:active{
+        color:var(--pink);
+    }
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content:'\f00d';
+    }
+
+    .home{
+        flex-flow: column-reverse;
+    }
+
+    .home .image img{
+        width:100%;
+    }
+
+    .home .content h3{
+        font-size: 3.6rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+    .about{
+        background-position: right;
+    }
+
+    .newsletter p{
+        width:auto;
+    }
+
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+    .new-btn {
+        padding: 1rem 1rem;
+    }
+
+    .about .column .content .buttons a{
+        width:100%;
+        text-align: center;
+    }
+
+    .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
+
+}
